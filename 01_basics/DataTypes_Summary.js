@@ -56,3 +56,36 @@ const myfunc = function(){
 // Data type pta krna kissi bhi value ka kissi bhi cheez ka datatype pta karna.
 // Use: typeof
 console.log(typeof outsideTemp);
+
+
+
+// ***********************************************************************************************************************************
+
+//Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "Manav"
+
+let anothername = myYoutubename
+anothername = "manav_2930"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl" 
+}
+
+let userTwo = userOne
+
+// dot(.) value se access krte h values and baki sb.
+
+
+userTwo.email = "manav@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
+
+
+
