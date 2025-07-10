@@ -6,11 +6,12 @@ console.log(myArr[1]);
 // Arrays Methods
 
 // push ka meaning ka jo bhi push mai number likhenge vo humare array mai last mai add hojayega and return krdega
+// push values ko add krdeta hai humare array ke andar.
 myArr.push(6)
 myArr.push(7)
 console.log(myArr);
 
-// pop ka meaning hai hai humare array mai jo last element hai vo remove krdega.
+// pop ka meaning hai hai humare array mai jo last value hai vo remove krdega.
 myArr.pop();
 console.log(myArr);
 
@@ -26,6 +27,23 @@ const newArr = myArr.join()
 
 console.log(myArr);
 console.log(typeof newArr);
+
+
+// SLICE AND SPLICE
+
+//SLICE:
+
+console.log("A ", myArr);
+
+const myn1 = myArr.slice(1, 3)
+
+console.log(myn1);
+console.log("B ", myArr);
+
+const myn2 = myArr.splice(1, 3)
+console.log("C ", myArr);
+console.log(myn2);
+
 
 
 
