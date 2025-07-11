@@ -27,20 +27,27 @@ console.log(JsUser["full name"]);
 console.log(JsUser[mySym]);
 
 JsUser.email = "manavgaba@chatgpt.com"
-Object.freeze(JsUser)
+// Object.freeze(JsUser)
 JsUser.email = "manav@microsoft.com"
 console.log(JsUser);
 
-JsUser.greetings = function(){
-    console.log("Hello JS user");
+JsUser.greeting = function(){
+    console.log("Hello JS User");
+    
 }
 
-// isko string interpolation bolte hai.
-JsUser.greetingsTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+// isko bolte hai string interpolation.
+JsUser.greetingTwo = function(){
+    // isme comma lga kr "${}" ye jo likha hai isme koi bhi variabe likh skte hai hum. 
+    // Jab bhi hume same object ko reference krna h to hum ${} iske andar "this." likh skte hai.
+    
+    console.log(`Hello JS User, ${this.name}`);
 }
-console.log(JsUser.greetings());
-console.log(JsUser.greetingsTwo());
+
+console.log(JsUser.greeting());
+console.log(JsUser.greetingTwo());
+
+
 
 
 
