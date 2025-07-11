@@ -66,6 +66,24 @@ console.log(tinderUser.hasOwnProperty('isLoggedIn'));
 
 
 
+// OBJECTS DE-STRUCTURING
+const course = {
+    coursename: "JS in hindi",
+    price: "₹999",
+    courseInstructor: "Manav"
+}
+
+//New Synatx 
+// course.courseInstructor
+
+// const {courseInstructor} = course
+// console.log(courseInstructor);
+
+
+// agar hume name change krna h to uska syntax ye h 
+const {courseInstructor: insturcture} = course
+console.log(insturcture);
+
 
 
 
